@@ -49,3 +49,5 @@ yarn-error.log*
 # ===== IDE / editor =====
 .idea/
 *.swp
+
+TESTCASES.md

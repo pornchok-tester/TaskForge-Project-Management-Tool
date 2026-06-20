@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from backend.routers import auth, projects, tickets, members, notifications, dashboard, test_utils
 
-app = FastAPI(title="TaskForge API", version="1.0.0")
+app = FastAPI(title="TaskForge API", version="1.0.0", docs_url=None, redoc_url=None, openapi_url=None)
 
 app.add_middleware(
     CORSMiddleware,
