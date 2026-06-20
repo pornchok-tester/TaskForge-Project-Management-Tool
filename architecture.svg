@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="860" height="620" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrow-indigo" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6366f1"/>
+    </marker>
+    <marker id="arrow-yellow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ca8a04"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="620" fill="#f8fafc" rx="6"/>
+
+  <!-- Title -->
+  <text x="430" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#0f172a">TaskForge — System Architecture</text>
+
+  <!-- ═══════════ HOST MACHINE ═══════════ -->
+  <rect x="30" y="52" width="800" height="138" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="50" y="72" font-size="11" font-weight="bold" fill="#64748b">HOST MACHINE</text>
+
+  <!-- Browser -->
+  <rect x="78" y="80" width="190" height="95" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="173" y="104" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e40af">Browser</text>
+  <text x="173" y="121" text-anchor="middle" font-size="11" fill="#1d4ed8">localhost:3000</text>
+  <line x1="78" y1="128" x2="268" y2="128" stroke="#93c5fd" stroke-width="1"/>
+  <text x="173" y="144" text-anchor="middle" font-size="10" fill="#3b82f6">เปิดเว็บ + call /api/* (relative)</text>
+  <text x="173" y="160" text-anchor="middle" font-size="10" fill="#3b82f6">token เก็บใน localStorage</text>
+
+  <!-- Postman / Robot Framework -->
+  <rect x="545" y="80" width="245" height="95" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="667" y="104" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">Postman / Robot Framework</text>
+  <text x="667" y="121" text-anchor="middle" font-size="11" fill="#b45309">localhost:8000</text>
+  <line x1="545" y1="128" x2="790" y2="128" stroke="#fcd34d" stroke-width="1"/>
+  <text x="667" y="144" text-anchor="middle" font-size="10" fill="#b45309">เรียก API โดยตรง (ข้าม Next.js)</text>
+  <text x="667" y="160" text-anchor="middle" font-size="10" fill="#b45309">ใช้ Bearer token ใน Authorization header</text>
+
+  <!-- ═══════════ DOCKER COMPOSE ═══════════ -->
+  <rect x="30" y="212" width="800" height="388" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="12,5"/>
+  <text x="52" y="234" font-size="12" font-weight="bold" fill="#16a34a">Docker Compose Network</text>
+
+  <!-- web (Next.js) -->
+  <rect x="60" y="250" width="262" height="175" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="191" y="273" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e40af">web (Next.js 14)</text>
+  <text x="191" y="290" text-anchor="middle" font-size="11" fill="#3b82f6">port 3000</text>
+  <line x1="60" y1="297" x2="322" y2="297" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="191" y="315" text-anchor="middle" font-size="11" fill="#374151">• React + Tailwind CSS UI</text>
+  <text x="191" y="333" text-anchor="middle" font-size="11" fill="#374151">• Server-side Proxy</text>
+  <text x="191" y="349" text-anchor="middle" font-size="10" fill="#6b7280">  /api/* → http://api:8000</text>
+  <text x="191" y="366" text-anchor="middle" font-size="11" fill="#374151">• JWT เก็บใน localStorage</text>
+  <text x="191" y="383" text-anchor="middle" font-size="11" fill="#374151">• Role-based UI rendering</text>
+  <text x="191" y="399" text-anchor="middle" font-size="10" fill="#6b7280">  admin / manager / dev / viewer</text>
+
+  <!-- api (FastAPI) -->
+  <rect x="535" y="250" width="265" height="183" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="667" y="273" text-anchor="middle" font-size="14" font-weight="bold" fill="#15803d">api (FastAPI)</text>
+  <text x="667" y="290" text-anchor="middle" font-size="11" fill="#22c55e">port 8000</text>
+  <line x1="535" y1="297" x2="800" y2="297" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="667" y="315" text-anchor="middle" font-size="11" fill="#374151">• REST API endpoints</text>
+  <text x="667" y="333" text-anchor="middle" font-size="11" fill="#374151">• JWT Authentication</text>
+  <text x="667" y="351" text-anchor="middle" font-size="11" fill="#374151">• Role-based Access Control</text>
+  <text x="667" y="369" text-anchor="middle" font-size="11" fill="#374151">• Alembic migrations</text>
+  <text x="667" y="387" text-anchor="middle" font-size="11" fill="#374151">• Auto seed on startup</text>
+  <text x="667" y="405" text-anchor="middle" font-size="11" fill="#374151">• SQLAlchemy ORM</text>
+  <text x="667" y="421" text-anchor="middle" font-size="10" fill="#6b7280">  migrate → seed → uvicorn start</text>
+
+  <!-- db (PostgreSQL) -->
+  <rect x="535" y="468" width="265" height="112" rx="8" fill="#fef9c3" stroke="#eab308" stroke-width="2"/>
+  <text x="667" y="491" text-anchor="middle" font-size="14" font-weight="bold" fill="#854d0e">db (PostgreSQL 15)</text>
+  <text x="667" y="508" text-anchor="middle" font-size="11" fill="#a16207">port 5432</text>
+  <line x1="535" y1="515" x2="800" y2="515" stroke="#fde047" stroke-width="1"/>
+  <text x="667" y="533" text-anchor="middle" font-size="11" fill="#374151">• database: taskforge</text>
+  <text x="667" y="551" text-anchor="middle" font-size="11" fill="#374151">• volume: postgres_data (persistent)</text>
+  <text x="667" y="568" text-anchor="middle" font-size="10" fill="#6b7280">  ข้อมูลคงอยู่แม้ container จะหยุด</text>
+
+  <!-- ═══════════ ARROWS ═══════════ -->
+
+  <!-- Browser → web -->
+  <line x1="173" y1="175" x2="173" y2="248" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <rect x="110" y="198" width="90" height="18" rx="3" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="155" y="211" text-anchor="middle" font-size="10" fill="#1d4ed8">HTTP :3000</text>
+
+  <!-- Postman → api -->
+  <line x1="667" y1="175" x2="667" y2="248" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow-amber)"/>
+  <rect x="606" y="198" width="90" height="18" rx="3" fill="white" stroke="#fcd34d" stroke-width="1"/>
+  <text x="651" y="211" text-anchor="middle" font-size="10" fill="#92400e">HTTP :8000</text>
+
+  <!-- web → api (proxy) -->
+  <line x1="324" y1="328" x2="533" y2="328" stroke="#6366f1" stroke-width="2" marker-end="url(#arrow-indigo)"/>
+  <rect x="346" y="309" width="165" height="18" rx="3" fill="white" stroke="#a5b4fc" stroke-width="1"/>
+  <text x="428" y="322" text-anchor="middle" font-size="10" fill="#4338ca">proxy → http://api:8000</text>
+
+  <!-- api → db -->
+  <line x1="667" y1="433" x2="667" y2="466" stroke="#ca8a04" stroke-width="2" marker-end="url(#arrow-yellow)"/>
+  <rect x="601" y="440" width="132" height="18" rx="3" fill="white" stroke="#fde047" stroke-width="1"/>
+  <text x="667" y="453" text-anchor="middle" font-size="10" fill="#854d0e">SQLAlchemy ORM</text>
+</svg>

@@ -1,0 +1,51 @@
+# ===== Robot Framework test suite (our automation folder) =====
+robot/
+
+# ===== Reference example project =====
+Exam-Robot-Saucedemo/
+
+# Robot Framework run artifacts (in case they are generated elsewhere)
+reports/
+log.html
+report.html
+output.xml
+selenium-screenshot-*.png
+geckodriver.log
+*.robot.log
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Environment / secrets =====
+.env
+.env.*
+!.env.example
+
+# ===== Python (backend) =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== Node / Next.js (frontend) =====
+node_modules/
+.next/
+out/
+build/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ===== IDE / editor =====
+.idea/
+*.swp
