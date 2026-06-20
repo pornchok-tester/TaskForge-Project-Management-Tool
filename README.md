@@ -16,7 +16,11 @@
 ## Quick Start
 
 ```bash
+lsof -ti :3000 | xargs kill -9 2>/dev/null; lsof -ti :8000 | xargs kill -9 2>/dev/null; echo "done"
+
+
 docker compose up --build
+docker compose down -v
 ```
 
 | Service | URL |
