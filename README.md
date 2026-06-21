@@ -46,14 +46,14 @@ docker compose down -v
 
 | ความสามารถ | admin | manager | developer | viewer |
 |---|:---:|:---:|:---:|:---:|
-| ดู Dashboard, Projects, Board | **Expected:** | **Expected:** | **Expected:** | **Expected:** |
-| สร้าง Project | **Expected:** | **Expected:** | ❌ | ❌ |
-| Quick Add Ticket | **Expected:** | **Expected:** | **Expected:** | ❌ |
-| แก้ไข Ticket (Title, Status, Priority, Assignee) | **Expected:** | **Expected:** | **Expected:** | ❌ |
-| เพิ่ม Comment | **Expected:** | **Expected:** | **Expected:** | ❌ |
-| เข้าหน้า Members | **Expected:** | **Expected:** | ❌ | ❌ |
-| เปลี่ยน Role สมาชิก | **Expected:** | ❌ | ❌ | ❌ |
-| ลบสมาชิก | **Expected:** | ❌ | ❌ | ❌ |
+| ดู Dashboard, Projects, Board | ✅ | ✅ | ✅ | ✅ |
+| สร้าง Project | ✅ | ✅ | ❌ | ❌ |
+| Quick Add Ticket | ✅ | ✅ | ✅ | ❌ |
+| แก้ไข Ticket (Title, Status, Priority, Assignee) | ✅ | ✅ | ✅ | ❌ |
+| เพิ่ม Comment | ✅ | ✅ | ✅ | ❌ |
+| เข้าหน้า Members | ✅ | ✅ | ❌ | ❌ |
+| เปลี่ยน Role สมาชิก | ✅ | ❌ | ❌ | ❌ |
+| ลบสมาชิก | ✅ | ❌ | ❌ | ❌ |
 
 ---
 

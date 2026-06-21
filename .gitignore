@@ -18,7 +18,7 @@ geckodriver.log
 Thumbs.db
 
 # ===== Environment / secrets =====
-.env
+# .env ถูก commit ขึ้น repo ตั้งใจ เพื่อให้ผู้ทดสอบ clone แล้ว docker compose up ได้เลย
 .env.*
 !.env.example
 
