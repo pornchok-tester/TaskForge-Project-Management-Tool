@@ -154,15 +154,14 @@ docker compose down -v
 **ขั้นที่ 10 — เพิ่ม Comment**
 - พิมพ์ `Admin reviewed this ticket` ใน Comment input
 - คลิกปุ่ม Add Comment
-- **Expected:** Comment "Admin reviewed this ticket" ปรากฏในรายการ Comment
-- **Expected:** Comment input ถูก clear อัตโนมัติ (ค่าใน input เป็น empty string)
+- **Expected:** Comment "Admin reviewed this ticket" ปรากฏในรายการ Comment และ ช่อง input ถูก clear อัตโนมัติ (ค่าใน input เป็น empty string)
 
 **ขั้นที่ 11 — Logout และ Verify Redirect**
 - คลิก User Menu icon
 - **Expected:** Dropdown menu ปรากฏ
 - คลิก Logout
 - **Expected:** URL เปลี่ยนไปที่ `/login`
-- นำทางตรงไปที่ `/dashboard` โดยไม่ login
+- เข้าไปที่ url ของ `/dashboard` โดยไม่ login
 - **Expected:** ระบบ Redirect กลับมาที่ `/login`
 
 ---
