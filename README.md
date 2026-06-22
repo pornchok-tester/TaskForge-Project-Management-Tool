@@ -161,7 +161,7 @@ docker compose down -v
 - **Expected:** Dropdown menu ปรากฏ
 - คลิก Logout
 - **Expected:** URL เปลี่ยนไปที่ `/login`
-- เข้าไปที่ url ของ `/dashboard` โดยไม่ login
+- เข้าไปที่ url `/dashboard` โดยไม่ login
 - **Expected:** ระบบ Redirect กลับมาที่ `/login`
 
 ---
@@ -198,8 +198,7 @@ docker compose down -v
 **ขั้นที่ 5 — เพิ่ม Comment**
 - พิมพ์ `Completed refactoring, ready for code review` ใน Comment input
 - คลิกปุ่ม Add Comment
-- **Expected:** Comment ปรากฏในรายการ
-- **Expected:** Comment input ถูก clear อัตโนมัติ
+- **Expected:** Comment ปรากฏในรายการ และ input ถูก clear อัตโนมัติ
 
 **ขั้นที่ 6 — Quick Add Ticket งานใหม่**
 - คลิกปุ่ม Back to Board
@@ -253,7 +252,7 @@ docker compose down -v
 - **Expected:** Comment input และปุ่ม Add Comment **ไม่ปรากฏ**
 
 **ขั้นที่ 6 — ตรวจสอบการเข้าหน้า Members โดยตรง**
-- นำทางตรงไปที่ `/workspace/members` ใน address bar
+- เข้าไปที่ url `/workspace/members` ใน address bar
 - **Expected:** ระบบ Redirect กลับมาที่ `/dashboard` (Viewer ไม่มีสิทธิ์เข้าหน้า Members)
 
 ---
